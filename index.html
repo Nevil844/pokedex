@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokedex</title>
+    <link rel="icon" href="./assets/pokeball.svg">
     <link rel="stylesheet" href="style.css" />
     <script src="./pokemon.js" defer></script>
     <script src="./search.js" defer></script>
@@ -46,22 +47,23 @@
                 />
               </div>
               <div class="filter-wrapper">
-                <p class="body2-fonts">Sort by:</p>
+                <p class="body2-fonts">Search by:</p>
                 <div class="filter-wrap">
+                  <div>
+                    <input type="radio" id="name" name="filters" value="name" checked />
+                    <label for="name" class="body3-fonts">Name</label>
+                  </div>
                   <div>
                     <input
                       type="radio"
                       id="number"
                       name="filters"
                       value="number"
-                      checked
+                      
                     />
                     <label for="number" class="body3-fonts">Number</label>
                   </div>
-                  <div>
-                    <input type="radio" id="name" name="filters" value="name" />
-                    <label for="name" class="body3-fonts">Name</label>
-                  </div>
+                  
                 </div>
               </div>
             </div>
